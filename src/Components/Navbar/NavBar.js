@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 //import Link for page change
 import { Link } from "react-router-dom";
 //SearchBar component
@@ -9,6 +9,9 @@ import Logo from "../../assets/Logo/favicon.webp";
 import "./Navbar.scss";
 
 const NavBar = () => {
+  //state ofr hamburger
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="NavBar">
       <nav className="NavbarItems ">
@@ -18,15 +21,15 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div className="NavbarToggleIcon">
-          <div className="Hamburger">
-            <span className="HamburgerIcon a"></span>
-            <span className="HamburgerIcon b"></span>
-            <span className="HamburgerIcon c"></span>
+        <div className="NavbarToggleIcon" onClick={(() => setIsOpen(!isOpen) )}>
+          <div className="Hamburger" >
+            <div className={isOpen ? "HamburgerIcon" : "HamburgerIconBar1"}></div>
+            <div className={isOpen ? "HamburgerIcon" : "HamburgerIconBar2"}></div>
+            <div className={isOpen ? "HamburgerIcon" : "HamburgerIconBar3"}></div>
           </div>
         </div>
 
-        <ul className="NavbarUl">
+        <ul className={isOpen ? "NavbarUl active" : "NavbarUl"}>
           <div className="NavbarSearchBar">
             <SearchBar />
           </div>
