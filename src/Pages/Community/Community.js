@@ -29,7 +29,7 @@ const Community = () => {
   return (
     <div className="communityContainer">
       <div className="displayData">
-        {name === null && email === null && mobile === null ? (
+        {name === null && email === null && mobile === null && pan === null ? (
           <div className="dataMsg">
           <h2 className="text">Put some details in form & see them here</h2>
           </div>
@@ -38,15 +38,16 @@ const Community = () => {
             <h2 className="text">Name : {name} </h2>
             <h2 className="text">Email : {email} </h2>
             <h2 className="text">Mobile : {mobile} </h2>
-          </div>
-        )}
-        {pan === "" || null || undefined ? (
-          <div className="dataMsg">
-          <h2 className="text">Oops! No PAN details found..</h2>
-          </div>
-        ) : (
-          <div className="dataMsg">
-            <h2 className="text">PAN : {pan} </h2>
+            {pan ? (
+              <div className="dataMsg">
+              <h2 className="text">PAN : {pan} </h2>
+              
+              </div>
+            ) : (
+              <div className="dataMsg">
+              <h2 className="text">Oops! No PAN details found..</h2>
+              </div>
+            )}
           </div>
         )}
       </div>
