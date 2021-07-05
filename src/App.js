@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
         <Router>
-          <Suspense fallback={<div className="SpinnerContainer"><img src={Spinner} className="spinner" alt="loading Spinner"/></div>}>
+          <Suspense fallback={<div className="spinnerContainer"><img src={Spinner} className="spinner" alt="loading Spinner"/></div>}>
             <NavBar />
             <Switch>
               <Route exact path="/" component={Home} />
