@@ -84,3 +84,22 @@ select:-webkit-autofill:focus {
     border-radius: 9999px;
     cursor: pointer;
   }
+
+  //spinner styles
+  .spinnerContainer {
+    height: 100vh;
+    z-index: 10;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .spinner {
+      height: 100%;
+      z-index: 10;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
