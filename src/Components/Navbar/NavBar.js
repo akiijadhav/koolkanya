@@ -23,9 +23,9 @@ const NavBar = () => {
 
         <div className="NavbarToggleIcon" onClick={(() => setIsOpen(!isOpen) )}>
           <div className="Hamburger" >
-            <div className={isOpen ? "HamburgerIcon" : "HamburgerIconBar1"}></div>
-            <div className={isOpen ? "HamburgerIcon" : "HamburgerIconBar2"}></div>
-            <div className={isOpen ? "HamburgerIcon" : "HamburgerIconBar3"}></div>
+            <div className={isOpen ?  "HamburgerIconBar1" : "HamburgerIcon"}></div>
+            <div className={isOpen ?  "HamburgerIconBar2" : "HamburgerIcon"}></div>
+            <div className={isOpen ?  "HamburgerIconBar3" : "HamburgerIcon"}></div>
           </div>
         </div>
 
