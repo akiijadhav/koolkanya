@@ -101,5 +101,8 @@ select:-webkit-autofill:focus {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
     }
   }
