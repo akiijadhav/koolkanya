@@ -1,0 +1,46 @@
+@import '../../App.scss';
+
+.formHome {
+    display: flex;
+    flex-direction: column;
+    max-width: 37.5rem;
+    margin: auto;
+    height: auto;
+    padding: 0 3rem;
+
+    .inputGroup {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+
+        .labelText {
+            font-size: 1.2rem;
+            font-weight: 400;
+    
+            .labelColor {
+               color: $primary-color;
+               font-size: 1.2rem; 
+            }
+        }
+    }
+
+
+    .submitFormBtn {
+        background: $primary-color;
+        border: none;
+        height: 3rem;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.25);
+            color: $white-color;
+        }
+    }
+}
+

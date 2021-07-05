@@ -1,0 +1,74 @@
+@import '../../App.scss';
+
+.NavBar {
+    display: flex;
+    flex: 1;
+    box-shadow: 0px 1px 10px #999;
+    padding: 1rem 3rem;
+    align-items: center;
+
+    .NavbarItems {
+        display: flex;
+        // background: orange;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .NavbarLogo {
+            // background: pink;
+
+            .Logo {
+                height: 3.125rem;
+                width: 3.125rem;
+            }
+        }
+
+        .NavbarToggleIcon {
+            width: 10rem;
+            height: auto;
+            .Hamburger {
+                width: auto;
+                height: 4rem;
+                background: red;
+
+                .HamburgerIcon {
+                    width: 0.4rem;
+                    height: 0.2rem;
+                    background: black;
+                }
+            }
+        }
+        
+        .NavbarUl {
+            padding-inline-start: 0;
+            display: flex;
+            flex: 1;
+            width: 100%;
+            align-items: center;
+
+            .NavbarSearchBar {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                padding: 0 2rem;
+            }
+            
+            .NavbarRoutes {
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    color: $font-title-color;
+                    text-decoration: none;
+
+                    .NavLinks {
+
+                        padding: 1rem 2rem;
+                    }
+                }
+
+            }
+        }
+    }
+}

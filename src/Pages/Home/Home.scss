@@ -1,0 +1,21 @@
+.registerationForm {
+    width: 100%;
+    height: auto;
+
+    .registerationFormContainer {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        max-width: 37.5rem;
+        margin: auto;
+        justify-content: center;
+        padding: 1rem;
+
+
+        .formTitle {
+            font-size: 3rem;
+            color: black;
+            font-weight: 500;
+        }
+    }
+}

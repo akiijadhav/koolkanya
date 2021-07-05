@@ -1,0 +1,25 @@
+.communityContainer {
+    // width: 100%;
+    height: calc(100% - 6.724rem);
+    display: flex;
+    flex: 1;
+
+    .displayData {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        flex: 1;
+        align-items: center;
+
+        .dataMsg {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+
+        }
+    }
+}
