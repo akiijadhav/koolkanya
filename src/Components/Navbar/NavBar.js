@@ -34,13 +34,13 @@ const NavBar = () => {
             <SearchBar />
           </div>
           <div className="NavbarRoutes">
-            <Link to="/community">
+            <Link to="/community" onClick={() => setIsOpen(false)}>
               <span className="NavLinks">Community</span>
             </Link>
-            <Link to="/events">
+            <Link to="/events" onClick={() => setIsOpen(false)}>
               <span className="NavLinks">Events</span>
             </Link>
-            <Link to="/blogs">
+            <Link to="/blogs" onClick={() => setIsOpen(false)}>
               <span className="NavLinks">Blogs</span>
             </Link>
           </div>
