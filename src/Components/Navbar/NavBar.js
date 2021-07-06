@@ -13,15 +13,15 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="NavBar">
-      <nav className="NavbarItems ">
+    <div className="NavBar" style={{ boxShadow: isOpen ? "none" : "0px 1px 10px #999"}}>
+      <nav className="NavbarItems">
         <div className="NavbarLogo">
           <Link to="/">
             <img src={Logo} alt="KoolKanya Logo" className="Logo" />
           </Link>
         </div>
 
-        <div className="NavbarToggleIcon" onClick={(() => setIsOpen(!isOpen) )}>
+        <div className="NavbarToggleIcon" onClick={(() => setIsOpen(!isOpen) )} style={{ display: isOpen ? "flex" : "", justifyContent: "flex-end"}}>
           <div className="Hamburger" >
             <div className={isOpen ?  "HamburgerIconBar1" : "HamburgerIcon"}></div>
             <div className={isOpen ?  "HamburgerIconBar2" : "HamburgerIcon"}></div>
